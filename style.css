@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --main-color: #FFC800;       /* สีส้มหลัก (ส้มแสด) */
+    --main-hover: #ffd500;       /* สีส้มเข้ม (ตอนชี้) */
+    --text-color: #000000;       /* สีตัวหนังสือ */
+    --bg-light: #002ae4;         /* สีพื้นหลังอ่อนๆ (ส้มจางๆ) */
+}
+
+body {
+    font-family: 'Maitree', sans-serif !important;
+    color: var(--text-color);
+}
+
+/* ตั้งค่าสีพื้นหลังธีม (ใช้กับ Navbar หรือ แถบสี) */
+.bg-theme {
+    background-color: var(--main-color) !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+/* ตั้งค่าปุ่มกด */
+.btn-theme {
+    background-color: var(--main-color) !important;
+    border: none !important;
+    color: rgb(0, 0, 0) !important;
+    border-radius: 50px; /* ปุ่มมน */
+    padding: 10px 30px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(243, 111, 33, 0.3); /* เงาสีส้ม */
+    transition: 0.3s;
+}
+
+.btn-theme:hover {
+    background-color: var(--main-hover) !important;
+    transform: translateY(-2px); /* ขยับขึ้นนิดนึงตอนชี้ */
+}
+
+/* แถบสีด้านล่าง (Footer) หรือแถบข้อความ */
+.bg-theme-soft {
+    background-color: var(--bg-light) !important;
+}
